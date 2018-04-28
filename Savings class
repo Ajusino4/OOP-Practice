@@ -1,0 +1,23 @@
+public class Savings extends Accounts{
+
+	private int overDraft;
+	
+	public Savings() {
+		this(0,0);
+	}
+	
+	public Savings(int ID, double balance ) {
+		super(ID, balance);
+		this.overDraft = -500;
+	
+	
+	if (balance < overDraft) {
+		System.out.println("You have reached the limit.");
+	}
+	
+}
+	
+	public String toString() {
+		return super.toString() + "\nOverdraft limit: " + overDraft;
+	}
+}
