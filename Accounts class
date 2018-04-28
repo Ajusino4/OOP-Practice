@@ -1,0 +1,35 @@
+import java.util.Date;
+
+public class Accounts {
+
+	private int ID;
+	private double balance;
+	private Date dateCreated;
+	
+	public Accounts() {
+		this(0,0);
+	}
+	
+	public Accounts(int ID, double balance) {
+		this.ID = ID;
+		this.balance = balance;
+		dateCreated = new Date();
+	}
+	
+	//Setting up the accessor/mutator methods for balance and ID
+	public double balance() {
+		return balance;
+	}
+	public void setBalance (double balance) {
+		this.balance = balance;
+	}
+	public int getID() {
+		return ID;
+	}
+	public void setID (int ID){
+		this.ID = ID;
+	}
+	public String toString() {
+		return "Account ID: " + ID + "\nAccount balance: " + balance + "\nDate created: " + dateCreated;
+	}
+}
