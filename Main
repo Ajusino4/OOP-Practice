@@ -1,0 +1,13 @@
+public class OOPpractice {
+
+	public static void main(String[] args) {
+		
+		Accounts account = new Accounts(1122, 20000);
+		Savings userSavings = new Savings(1122, 600);
+		
+		System.out.println(account.toString());
+		System.out.println(userSavings.toString());
+		
+	}
+
+}
